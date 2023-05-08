@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #1E88E5;
+  margin-bottom: 20px;
+}
+
+/* Center the snackbar horizontally */
+.mat-snack-bar {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center the snackbar vertically */
+.mat-snack-bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 750px;
+  margin: 1rem auto;
+}
+
+@media (max-width: 767px) {
+  .forecast-container .forecast-item {
+    width: calc(50% - 2rem);
+  }
+}
+
+
+
+.home-page {
+  background-color: #2c2c2c;
+}

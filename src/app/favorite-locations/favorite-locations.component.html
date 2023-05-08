@@ -1,0 +1,6 @@
+<div class="favorite-locations-list">
+  <div *ngFor="let location of favoriteLocations" class="favorite-location">
+    <span (click)="onLocationClick(location.name)">{{ location.name }}</span>
+    <button (click)="onDelete(location.name)">Delete</button>
+  </div>
+</div>

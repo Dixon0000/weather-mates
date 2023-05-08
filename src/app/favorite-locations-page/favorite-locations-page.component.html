@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="favorite-locations-container">
+    <h1 class="favorites-title">Favourited Locations</h1>
+    <app-favorite-locations
+      [favoriteLocations]="favoriteLocations"
+      (locationDeleted)="onLocationDeleted($event)"
+      (locationClicked)="onLocationClicked($event)"> 
+    </app-favorite-locations>
+  </div>
+
+  <div class="section-separator"></div>
+
+  <div class="location-history-container">
+    <h1 class="location-history-title">Location History</h1>
+    <div *ngFor="let location of locationHistory" class="history-item">
+      <span class="history-name" (click)="onLocationClicked(location.name)">{{ location.name }}</span>
+    </div>
+  </div>
+</div>

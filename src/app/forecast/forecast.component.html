@@ -1,0 +1,11 @@
+<div *ngIf="forecastData?.forecast?.forecastday && forecastData.forecast.forecastday.length">
+  <h2 class="forecast-title">3-Day Forecast</h2>
+  <div class="forecast-days">
+    <div *ngFor="let day of forecastData?.forecast?.forecastday" class="forecast-day">
+      <h4>{{ day.date | date:'EEEE' }}</h4>
+      <img [src]="day.day.condition.icon" alt="Weather icon" class="forecast-icon">
+      <p>Min: {{ day.day.mintemp_c }}°C</p>
+      <p>Max: {{ day.day.maxtemp_c }}°C</p>
+    </div>
+  </div>
+</div>

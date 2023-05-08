@@ -1,0 +1,5 @@
+<form (ngSubmit)="onLocationSubmit(locationInput.value)" #locationForm="ngForm">
+  <input type="text" required #locationInput placeholder="Enter location" />
+  <button type="submit">Search Location</button>
+  <button type="button" class="add-to-favorites-button" (click)="onAddToFavorites(locationInput.value)">Add to Favorites</button>
+</form>

@@ -1,0 +1,85 @@
+/* favorite-page.component.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #b4afaf;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box; 
+}
+
+.favorite-locations-container,
+.location-history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(37, 163, 172);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  width: 100%; 
+}
+
+.section-separator {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.favorites-title,
+.location-history-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #bf37d1;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.location-name,
+.history-name {
+  font-size: 24px;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.delete-button {
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.history-item:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}

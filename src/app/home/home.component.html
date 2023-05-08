@@ -1,0 +1,19 @@
+<div class="home-page">
+  <div class="container">
+    <h1 class="app-title">WeatherMates</h1>
+    <app-location-search
+      #locationSearchComponent
+      (addToFavorites)="onLocationAdded($event)"
+      (locationSelected)="onLocationSelected($event)"
+      (currentWeatherReceived)="onCurrentWeatherReceived($event)"
+      (forecastReceived)="onForecastReceived($event)"
+      (invalidLocation)="onInvalidLocation()"
+    ></app-location-search>
+
+    <app-current-weather [weatherData]="currentWeather"></app-current-weather>
+
+    <div class="forecast-container">
+      <app-forecast [forecastData]="forecast"></app-forecast>
+    </div>
+  </div>
+</div>
